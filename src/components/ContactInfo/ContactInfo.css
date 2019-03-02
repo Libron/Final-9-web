@@ -1,0 +1,17 @@
+.ContactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.ContactInfo .info p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ContactInfo .info p>span {
+    color: #ff6d00;
+    font-style: italic;
+    margin-left: 40px;
+}

@@ -1,0 +1,18 @@
+.EditPage {
+    background-color: #fff;
+    padding: 6%;
+    border-radius: 6px;
+    width: 70%;
+    flex: 1;
+    margin: auto;
+}
+
+.EditPage .title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.EditPage .btn-submit {
+    float: right;
+}

@@ -1,0 +1,50 @@
+.ContactList {
+    margin: 0;
+    padding: 20px 0 50px 0;
+}
+
+.ContactList .item .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.ContactList .item {
+    padding: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+    margin-bottom: 10px;
+}
+
+.ContactList .item:hover {
+    background-color: #ff6d00;
+}
+.ContactList .item .fullname {
+    font-size: 20px;
+    font-style: italic;
+    flex: 8;
+    margin-left: 30px;
+}
+
+.ContactList .item .avatar {
+    flex: 1;
+
+}
+
+.ModalButtons {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.ModalButtons button {
+    margin: 0 15px;
+}
+
