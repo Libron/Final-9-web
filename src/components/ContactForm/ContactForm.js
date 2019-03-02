@@ -49,8 +49,12 @@ class ContactForm extends Component {
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="avatar">Photo</Label>
+                    <Label for="avatar">Photo URL</Label>
                     <Input type="text" name="avatar" id="avatar" value={this.state.avatar} onChange={this.valueChanged} />
+                </FormGroup>
+                <FormGroup>
+                    <p>Photo Preview</p>
+                    {this.state.avatar ? <img src={this.state.avatar} alt={this.state.firstname} style={{widht: '100px', height: '100px'}}/> : null}
                 </FormGroup>
                 <Button color="info" className="btn-submit">Submit</Button>
             </Form>

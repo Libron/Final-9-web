@@ -23,20 +23,24 @@ class ContactsPage extends Component {
             const contact = this.props.contacts[contactId];
             const fullname = contact.firstname + ' ' + contact.lastname;
 
-           return <li key={contactId} className="item" onClick={() => this.props.showContact(contactId, this.props.contacts[contactId])}>
-               <img src={contact.avatar} alt={fullname} className="avatar img-fluid"/>
-               <p className="fullname">{fullname}</p>
-           </li>
-        });
+           return (
+               <li
+                   key={contactId}
+                   className="item"
+                   onClick={() => this.props.showContact(contactId, this.props.contacts[contactId])}
+               >
+                    <img src={contact.avatar} alt={fullname} className="avatar img-fluid"/>
+                    <p className="fullname">{fullname}</p>
+                </li>
+           )});
+
         return (
             <div>
                 <Modal
                     show={this.props.show}
                     close={this.props.closeModal}
                 >
-                    <ContactInfo
-                        contact={this.props.contact}
-                    />
+                    <ContactInfo contact={this.props.contact} />
                     <div className="ModalButtons">
                         <Button color="warning" onClick={() => this.props.history.push('contact/' + this.props.contact.id + '/edit')}>Edit</Button>
                         <Button color="danger" onClick={() => {

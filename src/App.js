@@ -16,7 +16,7 @@ class App extends Component {
                   <Route path="/" exact component={ContactsPage}/>
                   <Route path="/add-contact" exact component={AddPage}/>
                   <Route path="/contact/:id/edit" exact component={EditPage}/>
-                  <Route render={() => <h1>Not Found</h1>}/>
+                  <Route render={() => <h1>Page Not Found</h1>}/>
               </Switch>
           </Container>
 
